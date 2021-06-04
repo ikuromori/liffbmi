@@ -4,7 +4,7 @@ $(function () {
     $('form').submit(function () {
         var height = $('textarea[name="height"]').val();
         var weight = $('textarea[name="weight"]').val();        
-        var msg = `${height}${weight}`;
+        var msg = `${height}\r\n${weight}`;
         sendText(msg);
         return false;
     });
